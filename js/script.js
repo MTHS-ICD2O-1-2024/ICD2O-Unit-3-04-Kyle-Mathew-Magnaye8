@@ -4,15 +4,15 @@
 // Created on: Apr 2025
 // This file contains the JS functions for index.html
 
-const fahrenheitInput = document.getElementById("fahrenheit")
-const celsiusInput = document.getElementById("celsius")
+const fahrenheitInput = document.getElementById("fahrenheit");
+const celsiusInput = document.getElementById("celsius");
 
 fahrenheitInput.addEventListener("input", () => {
-  const fahrenheit = parseFloat(fahrenheitInput.value)
+  const fahrenheit = parseFloat(fahrenheitInput.value);
   if (!isNaN(fahrenheit)) {
-    const celsius = (((fahrenheit - 32) * 5) / 9).toFixed(3)
-    celsiusInput.value = celsius + " °C"
+    const celsius = (((fahrenheit - 32) * 5) / 9).toFixed(3);
+    celsiusInput.value = celsius + " °C";
   } else {
-    celsiusInput.value = ""
+    celsiusInput.value = "";
   }
-})
+});
