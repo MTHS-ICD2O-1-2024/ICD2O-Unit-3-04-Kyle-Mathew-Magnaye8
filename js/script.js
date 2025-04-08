@@ -10,7 +10,7 @@ const celsiusInput = document.getElementById("celsius")
 fahrenheitInput.addEventListener("input", () => {
   const fahrenheit = parseFloat(fahrenheitInput.value)
   if (!isNaN(fahrenheit)) {
-    const celsius = (((fahrenheit - 32) * 5) / 9).toFixed(2)
+    const celsius = (((fahrenheit - 32) * 5) / 9).toFixed(3)
     celsiusInput.value = celsius + " °C"
   } else {
     celsiusInput.value = ""
