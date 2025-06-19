@@ -16,4 +16,3 @@ fahrenheitInput.addEventListener("input", function () {
     celsiusInput.value = ""
   }
 })
-``
