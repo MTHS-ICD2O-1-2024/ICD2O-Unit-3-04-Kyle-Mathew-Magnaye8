@@ -7,9 +7,9 @@
 const fahrenheitInput = document.getElementById("fahrenheit");
 const celsiusInput = document.getElementById("celsius");
 
-fahrenheitInput.addEventListener("input", () => {
+fahrenheitInput.addEventListener("input", function () {
   const fahrenheit = parseFloat(fahrenheitInput.value);
-  if (!isNaN(fahrenheit)) {
+  if (typeof fahrenheit === "number" && fahrenheitInput.value !== "") {
     const celsius = (((fahrenheit - 32) * 5) / 9).toFixed(3);
     celsiusInput.value = celsius + " °C";
   } else {
